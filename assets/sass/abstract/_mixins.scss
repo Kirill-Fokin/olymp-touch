@@ -1,0 +1,30 @@
+@mixin width-height ($width, $height) {
+  width: $width;
+  height: $height;
+}
+  
+@mixin flex ($justify-content: normal, $align-items:normal) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+  
+@mixin font ($size, $font-family, $weight: bold, $font-style: normal) {
+  font-size: $size;
+  font-family: $font-family;
+  font-weight: $weight;
+  font-style: $font-style;
+}
+
+
+@mixin media-laptop {
+  @media (max-width: $desktop) { @content; }
+}
+  
+@mixin media-tablet {
+  @media (max-width: $tablet) { @content; }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile) { @content; }
+}

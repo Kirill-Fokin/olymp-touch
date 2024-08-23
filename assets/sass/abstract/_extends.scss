@@ -1,0 +1,14 @@
+%flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-jc-center {
+  display: flex;
+  justify-content: center;
+}
+ 
+%transition {
+  transition: .3s ease-in-out;
+}

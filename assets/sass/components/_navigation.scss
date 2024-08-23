@@ -1,0 +1,51 @@
+.navigation {
+   @include flex(space-between, normal);
+   column-gap: 4.6rem;
+
+   @media (max-width: 856px) {
+    
+  }
+   &__wrapper {
+     position: relative;
+     left: -0.3rem;
+
+
+     @media (max-width: 856px) {
+      z-index: 99;
+      @include flex(center, center);
+      row-gap: 10%;
+      flex-direction: column;
+      position: absolute;
+      // right: 100vw;
+      transform: translateX(100vw);
+      margin-top: 0rem;
+      height: 100vh;;
+      top: 0;
+      width: 100vw;
+      padding: 75px 20px 20px 20px;
+      background-color: rgb(130, 183, 141);
+      
+      visibility: hidden;
+      transition: transform .5s, visibility .5s;
+      will-change: transform;
+  
+      .header.open & {
+        transform: translateX(0vw);
+        visibility: visible;
+    }
+   }
+}
+
+.menu {
+  &__link {
+    @include font(1.6rem, "Inika", 400);
+    color: black;        
+    transition: .3s ease-in-out;
+    &:hover {
+    }
+    @include media-tablet {
+      @include font(3.5rem, "Inika", 400);
+    }
+  }
+}
+}
