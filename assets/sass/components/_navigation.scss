@@ -1,50 +1,52 @@
 .navigation {
-   @include flex(space-between, normal);
-   column-gap: 4.6rem;
-
+  position: relative;
+   @include flex(normal, normal);
+   padding-left: 0;
+   column-gap: 3.6rem;
+   padding-bottom: 2rem;
+   border-bottom: 4px solid rgb(211, 211, 211);
+  //  position: absolute;
+   left: 0;
    @media (max-width: 856px) {
-    
   }
    &__wrapper {
-     position: relative;
-     left: -0.3rem;
-
-
+    //  position: relative;
      @media (max-width: 856px) {
-      z-index: 99;
-      @include flex(center, center);
-      row-gap: 10%;
-      flex-direction: column;
-      position: absolute;
-      // right: 100vw;
-      transform: translateX(100vw);
-      margin-top: 0rem;
-      height: 100vh;;
-      top: 0;
-      width: 100vw;
-      padding: 75px 20px 20px 20px;
-      background-color: rgb(130, 183, 141);
+      // z-index: 99;
+      // @include flex(center, center);
+      // row-gap: 10%;
+      // flex-direction: column;
+      // position: absolute;
+      // // right: 100vw;
+      // transform: translateX(100vw);
+      // margin-top: 0rem;
+      // height: 100vh;;
+      // top: 0;
+      // width: 100vw;
+      // padding: 75px 20px 20px 20px;
+      // background-color: rgb(130, 183, 141);
       
-      visibility: hidden;
-      transition: transform .5s, visibility .5s;
-      will-change: transform;
+      // visibility: hidden;
+      // transition: transform .5s, visibility .5s;
+      // will-change: transform;
   
       .header.open & {
-        transform: translateX(0vw);
-        visibility: visible;
+        // transform: translateX(0vw);
+        // visibility: visible;
     }
    }
 }
 
 .menu {
   &__link {
-    @include font(1.6rem, "Inika", 400);
+    @include font(1.6rem, "Open Sans", 400);
     color: black;        
     transition: .3s ease-in-out;
     &:hover {
+      color: $main-color;
     }
     @include media-tablet {
-      @include font(3.5rem, "Inika", 400);
+      @include font(3.5rem, "Open Sans", 400);
     }
   }
 }

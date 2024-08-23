@@ -1,8 +1,55 @@
 .header {
-  // padding-top: 5rem;
-  // padding-bottom: 5rem;
-  // background-color: $bg-srction-color;
+  position: relative;
+  padding-top: 2rem;
   &__wrapper  {
-    // @include flex(space-between);
+    // max-width: ;
+    @include flex(space-between);
+    flex-direction: column;
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  &__location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    a {
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+    span:nth-child(2) {
+      color: rgb(175, 180, 175);
+      font-size: 1.5rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &__buttons {
+    button {
+      border: none;
+      background-color: white;
+    }
+    display: flex;
+    row-gap: 1rem;
+    column-gap: 2rem;
   }
 }

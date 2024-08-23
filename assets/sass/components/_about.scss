@@ -1,0 +1,66 @@
+.about {
+
+  
+  &__wrapper {
+    column-gap: 12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-block {
+    position: relative;
+    border-radius: 1rem;
+    background-color: rgb(144, 146, 144);
+    width:35rem;
+    border: 1px solid white;
+
+
+    &__image {
+      position: relative;
+      top: -2rem;
+      left: -2rem;
+      background-color: $subMain-color;
+      border-radius: 1rem;
+      width: 8rem;
+      height: 8rem;
+    }
+    &__text {
+      color: black;
+      font-size: 1.5rem;
+    } 
+  }
+  &__text {
+    font-size: 1.3rem;
+    color: white;
+  }
+  &-activitis-layout {
+    column-gap: 3rem;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    .about__text {
+      font-size: 1.3rem;
+      color: white;
+    }
+  }
+  &__title {
+    max-width: 1rem;
+  }
+  &__atmosphere {
+    
+    z-index: 9999;
+    bottom: 4rem;
+    position: relative;
+    padding: 1.5rem;
+    padding-bottom: 4rem;
+    border-radius: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 1rem;;
+    background-color: $main-color;
+    .title {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+}

@@ -19,12 +19,9 @@
       background-color: rgb(79, 113, 236);
     }
   }
-  
-
   @include media-mobile {
     display:block;
   }
-  
   .header__burger-btn span {
     display: block;
     position: absolute;
@@ -65,8 +62,7 @@
 
   .header__burger-btn span:nth-child(1){
     width: 4rem;
-    left: 1.7rem;
-    
+    left: 1.7rem; 
   }
   
   .header.open .header__burger-btn span:nth-child(1) {
@@ -78,7 +74,7 @@
   }
   
   @include media-tablet{
-      .header__burger-btn  {
-         display: flex;
-      } 
+    .header__burger-btn  {
+      display: flex;
+    } 
   }

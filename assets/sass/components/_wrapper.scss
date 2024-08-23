@@ -1,12 +1,15 @@
 .wrapper {
-   // padding: 0 10.9rem; 
-   // max-width: 144rem;
+   margin: 0 auto;
+   padding: 0 10.9rem; 
+   max-width: 144rem;
+
+
    @include media-tablet {
-   //  padding: 0 5rem; 
-   //  max-width: 76.8rem;
+    padding: 0 5rem; 
+    max-width: 76.8rem;
    }
    @include media-mobile {
-   //  padding: 0 2.5rem; 
-   //  max-width: 33rem;
+    padding: 0 2.5rem; 
+    max-width: 33rem;
    }
 }
