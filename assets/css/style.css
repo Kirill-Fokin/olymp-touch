@@ -358,11 +358,8 @@ html {
   font-size: 10px;
 }
 
-body {
-  overflow-x: hidden;
-}
 body__wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .button {
@@ -494,16 +491,62 @@ body__wrapper {
 }
 
 .slider {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 0.5rem;
-     -moz-column-gap: 0.5rem;
-          column-gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
+.slider__butons {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  column-gap: 2rem;
+}
+.slider__butons__button {
+  border: 1px solid black;
+  width: 3rem;
+  height: 3rem;
+  background-color: #DB393B;
+  border-radius: 50%;
+}
+.slider__wrapper {
+  position: relative;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  right: 0px;
+}
+.slider .slide__image {
+  position: relative;
+  width: 100%;
+}
+
 .navigation {
   position: relative;
   display: -webkit-box;
@@ -579,9 +622,21 @@ body__wrapper {
   background-color: rgb(144, 146, 144);
   width: 35rem;
   border: 1px solid white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 8rem;
+  -ms-flex-preferred-size: 31rem;
+      flex-basis: 31rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about-block__image {
-  position: relative;
+  position: absolute;
   top: -2rem;
   left: -2rem;
   background-color: #433447;
@@ -601,8 +656,6 @@ body__wrapper {
   -webkit-column-gap: 3rem;
      -moz-column-gap: 3rem;
           column-gap: 3rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
