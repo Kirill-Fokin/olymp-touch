@@ -2,8 +2,16 @@ html {
   font-size: 10px;
 }
 
-body {
-  &__wrapper {
-     overflow: hidden;
-  }
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: $subMain-color;
 }

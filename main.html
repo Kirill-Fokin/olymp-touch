@@ -11,30 +11,32 @@
   <div class="body__wrapper">
     <header class="header">
       <div class="header__wrapper wrapper">
-        <ul class="navigation navigation__wrapper">
-          <li class="navigation__item">
-           <a href="" class="menu__link">О клубе</a>
-          </li>
-          <li class="navigation__item">
-           <a href="" class="menu__link">Расписание</a>
-          </li>
-          <li class="navigation__item">
-           <a href="" class="menu__link">Заморозка карты</a>
-          </li>
-          <li class="navigation__item">
-           <a href="" class="menu__link">Вакансии</a>
-          </li>
-          <li class="navigation__item">
-           <a href="" class="menu__link">Контакты</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="menu__link">COVID-19</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="menu__link">Запись</a>
-          </li>
-          <button class="header__button button">Оформить карту</button>
-        </ul>
+        <div class="header__bar">
+          <ul class="navigation navigation__wrapper">
+            <li class="navigation__item">
+             <a href="" class="navigation__link">О клубе</a>
+            </li>
+            <li class="navigation__item">
+             <a href="" class="navigation__link">Расписание</a>
+            </li>
+            <li class="navigation__item">
+             <a href="" class="navigation__link">Заморозка карты</a>
+            </li>
+            <li class="navigation__item">
+             <a href="" class="navigation__link">Вакансии</a>
+            </li>
+            <li class="navigation__item">
+             <a href="" class="navigation__link">Контакты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">COVID-19</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Запись</a>
+            </li>
+          </ul>        
+          <button class="header__button button button-red">Оформить карту</button>
+        </div>
         
         <button class="header__burger-btn" id="burger">
           <span></span><span></span><span></span>
@@ -46,17 +48,15 @@
             <a href="#">Посмотреть на карте</a>
           </div>
           <div class="header__logo">
-            <a class="logo" href="">
-              <object type="image/svg+xml" data="assets/images/header/main-logo.png" class="logo-object">
-                Your browser does not support SVG
-              </object>
+            <a class="logo" href="main.html">
+              <img  class="logo__image" src="assets/images/header/main-logo.png" alt="">
             </a>
           </div>
           <div class="header__social">
             <span>8 921 098-46-46</span>
             <span>info@olumpic-touch.ru</span>
             <div class="header__buttons">
-              <button class="button roun-button">
+              <button class="button round-button">
                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="0.97998" y="0.489395" width="38" height="38" rx="19" fill="#433447"/>
                   <g clip-path="url(#clip0_27893_386)">
@@ -69,18 +69,19 @@
                   </defs>
                 </svg>
               </button>
-              <button class="button roun-button">
+              <button class="button">
                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="0.97998" y="0.489395" width="38" height="38" rx="19" fill="#433447"/>
-                  <g clip-path="url(#clip0_27893_386)">
-                  <path d="M25.1991 25.4534C24.7311 25.1414 24.264 24.6742 23.796 24.2842C23.4849 23.9731 22.8617 23.35 22.7049 23.35C22.4717 23.4271 22.3157 24.0511 22.3157 24.5962C22.3157 24.6742 22.3157 25.2194 21.9257 25.5314C21.6146 25.8434 21.0686 25.9214 20.9914 25.9214H19.5103C18.7311 25.9214 16.0817 25.7654 13.7443 23.5831C10.8609 20.9345 8.44543 15.9468 8.28857 15.7137C8.21229 15.3237 8.13429 14.7785 8.44543 14.4665C8.75743 14.1545 9.30257 14.0765 9.53657 14.0765H12.8091C12.8863 14.0765 13.2763 14.1545 13.5891 14.3105C13.9003 14.4665 14.0563 14.8565 14.0563 14.8565C14.0563 14.8565 14.5234 15.9468 15.2246 16.96C16.2377 18.5182 16.7049 18.9082 16.8617 18.9862C17.0169 18.6742 17.0949 17.6611 17.0169 16.726C17.0169 16.3368 16.9397 15.8688 16.7829 15.7137C16.6106 15.5623 16.389 15.4791 16.1597 15.4797L15.6146 15.0117C15.5366 14.4665 16.0817 14.0774 16.4717 13.9214C17.0169 13.6865 17.874 13.6094 18.8871 13.6094H19.4323C20.3674 13.6094 20.6794 13.6865 21.0694 13.7654C22.3937 14.0765 22.3157 15.0897 22.3157 16.3368V17.9722C22.3157 18.2842 22.3157 18.7514 22.3929 18.9854C22.5497 18.9074 23.0949 18.4394 24.03 17.0371C24.6531 16.1028 25.1211 15.0888 25.1991 14.8557C25.3543 14.5437 25.6663 14.1537 26.4454 14.1537H30.108C30.8871 14.1537 31.3543 14.3877 31.5103 14.8557C31.7443 15.3228 31.6663 16.18 29.64 18.4394C29.3289 18.7514 29.0949 19.0634 28.8609 19.2965C28.3937 19.8425 27.9266 20.3877 27.9266 20.5437C28.0037 20.6208 28.4717 21.0108 28.9389 21.4008C30.108 22.3351 30.8871 23.1922 31.2763 23.8162C31.6663 24.4394 31.5883 24.8294 31.5103 25.1405C31.1991 25.8425 30.264 25.9205 30.03 25.9205H26.8354C26.5234 25.9205 25.9003 25.8425 25.1983 25.4525L25.1991 25.4534ZM22.7049 22.1028C23.4069 22.1028 24.03 22.726 24.6531 23.35C25.0431 23.7391 25.4331 24.1291 25.8223 24.3622C26.3674 24.6742 26.8354 24.6742 26.9134 24.6742H29.952C30.108 24.6742 30.264 24.5971 30.342 24.5971C30.342 24.5971 30.342 24.5182 30.264 24.4402C29.952 23.8951 29.1729 23.116 28.1597 22.3368C27.2254 21.5568 26.7574 21.1677 26.6794 20.6225C26.6014 19.9994 27.0686 19.5314 27.9257 18.5182C28.1597 18.2851 28.3937 17.9731 28.7057 17.6611C29.952 16.2588 30.264 15.6357 30.342 15.3237H26.2114C26.0563 15.6357 25.5883 16.726 24.9651 17.6611C23.4849 19.8434 22.7829 20.1554 22.3157 20.1554C22.1597 20.1554 22.0037 20.1554 21.8477 20.0765C21.0686 19.6094 21.0686 18.6742 21.1466 17.8951V16.258C21.2246 14.9337 21.1466 14.9337 20.8354 14.8565C20.5234 14.7785 20.2894 14.7785 19.3543 14.7005H18.8091C18.342 14.7005 17.796 14.7005 17.3289 14.7777L17.562 15.0117C18.03 15.5577 18.03 16.5708 18.03 16.726C18.1071 17.9731 18.1071 19.6874 17.25 20.0774C17.0949 20.1545 16.9389 20.1545 16.7829 20.1545C16.0817 20.1545 15.3026 19.4534 14.1343 17.5831C13.5103 16.6488 12.9651 15.4797 12.9651 15.4017L12.8871 15.3237C12.8091 15.3237 12.7311 15.2465 12.6531 15.2465H9.45857C9.92571 16.1808 12.1071 20.3894 14.5234 22.648C16.6277 24.5962 19.0431 24.6742 19.5103 24.6742H20.9906C20.9906 24.6742 21.1466 24.5971 21.2246 24.5971V24.5182C21.2246 24.2842 21.2246 22.4928 22.4717 22.1808C22.5489 22.1037 22.6277 22.1037 22.7049 22.1037V22.1028Z" fill="white"/>
+                  <g clip-path="url(#clip0_27893_381)">
+                  <path d="M24.2847 11.663C24.7477 11.6611 25.2065 11.7509 25.6346 11.9272C26.0628 12.1035 26.4517 12.3628 26.7791 12.6902C27.1065 13.0176 27.3659 13.4066 27.5422 13.8347C27.7185 14.2629 27.8083 14.7217 27.8064 15.1847V23.7941C27.8083 24.2571 27.7185 24.7159 27.5422 25.144C27.3659 25.5722 27.1065 25.9612 26.7791 26.2886C26.4517 26.616 26.0628 26.8753 25.6346 27.0516C25.2065 27.2279 24.7477 27.3177 24.2847 27.3158H15.6753C15.2123 27.3177 14.7535 27.2279 14.3253 27.0516C13.8972 26.8753 13.5082 26.616 13.1808 26.2886C12.8534 25.9612 12.5941 25.5722 12.4178 25.144C12.2415 24.7159 12.1517 24.2571 12.1536 23.7941V15.1847C12.1517 14.7217 12.2415 14.2629 12.4178 13.8347C12.5941 13.4066 12.8534 13.0176 13.1808 12.6902C13.5082 12.3628 13.8972 12.1035 14.3253 11.9272C14.7535 11.7509 15.2123 11.6611 15.6753 11.663H24.2847ZM15.6753 10.4894C13.0923 10.4894 10.98 12.6026 10.98 15.1847V23.7941C10.98 26.3771 13.0932 28.4894 15.6753 28.4894H24.2847C26.8677 28.4894 28.98 26.3762 28.98 23.7941V15.1847C28.98 12.6017 26.8668 10.4894 24.2847 10.4894H15.6753Z" fill="white"/>
+                  <path d="M19.98 16.046C21.8583 16.046 23.4243 17.612 23.4243 19.4894C23.4243 21.3677 21.8583 22.9337 19.98 22.9337C18.1017 22.9337 16.5366 21.3677 16.5366 19.4894C16.5366 17.6111 18.1026 16.046 19.98 16.046ZM19.98 14.8724C17.397 14.8724 15.363 16.9856 15.363 19.4894C15.363 21.9941 17.4762 24.1064 19.98 24.1064C22.4847 24.1064 24.597 21.9941 24.597 19.4894C24.597 16.9856 22.563 14.8724 19.98 14.8724ZM24.75 15.7364C25.0197 15.7364 25.2784 15.6292 25.4691 15.4385C25.6598 15.2478 25.767 14.9891 25.767 14.7194C25.767 14.4497 25.6598 14.191 25.4691 14.0003C25.2784 13.8095 25.0197 13.7024 24.75 13.7024C24.4803 13.7024 24.2216 13.8095 24.0308 14.0003C23.8401 14.191 23.733 14.4497 23.733 14.7194C23.733 14.9891 23.8401 15.2478 24.0308 15.4385C24.2216 15.6292 24.4803 15.7364 24.75 15.7364Z" fill="white"/>
                   </g>
                   <defs>
-                  <clipPath id="clip0_27893_386">
-                  <rect width="24" height="12.8571" fill="white" transform="translate(7.97998 13.0608)"/>
+                  <clipPath id="clip0_27893_381">
+                  <rect width="18" height="18" fill="white" transform="translate(10.98 10.4894)"/>
                   </clipPath>
                   </defs>
-                  </svg>
+                  </svg> 
               </button>
             </div>
           </div>
@@ -94,15 +95,177 @@
           <img class="slide__image" src="assets/images/slider/2.webp" alt="slide">
           <img class="slide__image" src="assets/images/slider/3.webp" alt="slide">
         </div>
-          <!-- <div class="slider__buttons">
+          <div class="slider__buttons">
             <div class="slider__button"><img src="assets/images/slider/leftButton.png" alt=""></div>
             <div class="slider__button"><img src="assets/images/slider/rightButton.png" alt=""></div>
-          </div> -->
+          </div>
       </div>
+     <h1 class="hidden"></h1> 
+     <section class="about">
+      <h2 class="hidden">Главное</h2>
+      <div class="about__wrapper wrapper">
+        <div class="about__atmosphere">
+          <p>Атмосфера олимпийских свершений</p>
+          <p>Современный фитнес-центр на юго-западе Санкт-Петербурга</p>
+          <button class="button button-black">Оформить карту</button>
+        </div>
+        <ul class="about__act-layout act-layout">
+          <li class="act-layout__item">
+            <div class="act-layout_img">
+              <img src="assets/images/about/training.svg fill.png" alt="">
+            </div>
+            <p class="act-layout__text">Тренажерный зал</p>
+          </li>
+          <li class="act-layout__item">
+            <div class="act-layout_img">
+              <img src="assets/images/about/cardio.svg fill.png" alt="">
+            </div>
+            <p class="act-layout__text">Кардиозона</p>
+          </li>
+          <li class="act-layout__item">
+            <div class="act-layout_img">
+              <img src="assets/images/about/aerobic.svg fill.png" alt="">
+            </div>
+            <p class="act-layout__text">Аэробный зал</p>
+          </li>
+          <li class="act-layout__item">
+            <div class="act-layout_img">
+              <img src="assets/images/about/sauna.svg fill.png" alt="">
+            </div>
+            <p class="act-layout__text">Сауна</p>
+          </li>
+          <li class="act-layout__item">
+            <div class="act-layout_img">
+              <img src="assets/images/about/box.svg fill.png" alt="">
+            </div>
+            <p class="act-layout__text">Зал для единоборств</p>
+          </li>
+        </ul>
 
-      <section class="about">
+        <div class="about__sale">
+          <div class="about__sale__wrapper">
+            <div class="about__sale-image">
+              <img src="assets/images/about/sportsmens.jpg" alt="">
+            </div>
+            <div class="about__sale-content">
+              <p>6 месяцев 7900 р</p>
+              <p>(по 02-09-2024 г )</p>
+              <button class="button button-red">Оформить карту</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section class="club">
+      <div class="club__wrapper wrapper">
+        <h2 class="title club__title">Клубная карта</h2>
+        <div class="club-layout">
+              <div class="card">
+                <img src="assets/images/club/olympic-touch.ru by html.to.design ❤️ FREE version - 23/08/Image+Gradient+Shadow.jpg" alt="">
+          </div>
+          <div class="club__content">
+            <div class="card__layout">
+              <div class="card-elem">Посещение тренажерного зала</div>
+              <div class="card-elem">Первый инструктаж</div>
+              <div class="card-elem">Групповые занятия</div>
+              <div class="card-elem">Посещение сауны</div>
+            </div>
+            <p class="club__subtext">Карта позволяет заниматься в клубе без ограничений в рабочие часы клуба или в соответствии с вашим тарифом .</p>
+          </div>
+        </div>
+        
+      </section>
+      </div>
+      <section class="prices">
+        <div class="wrapper prices__wrapper">
+          <div class="card-layout card-layout__wrapper">
+            <div class="card-layout__card card">
+              <h6 class="card__title">Утро</h6>
+              <div class="card-elem">
+                <span>Будние дни</span><span>7:00-16:00</span>
+              </div>
+              <div class="card-elem">
+                <span>Выходные дни</span><span>9:00-16:00</span>
+              </div>
+  
+              <div class="card-elem-last">
+                <span>12 месяцев</span><span>9900</span>
+              </div>
+            </div>
+            <div class="card-layout__card card">
+              <h6 class="card__title">День</h6>
+              <div class="card-elem">
+                <span>Будние дни</span><span>7:00-16:00</span>
+              </div>
+              <div class="card-elem">
+                <span>Выходные дни</span><span>9:00-16:00</span>
+              </div>
+  
+              <div class="card-elem-last">
+                <span>12 месяцев</span><span>7500</span>
+              </div>
+            </div>
+            <div class="card-layout__card card">
+              <h6 class="card__title">Вечер</h6>
+              <div class="card-elem">
+                <span>Будние дни</span><span>7:00-16:00</span>
+              </div>
+              <div class="card-elem">
+                <span>Выходные дни</span><span>9:00-16:00</span>
+              </div>
+  
+              <div class="card-elem-last">
+                <span>12 месяцев</span><span>6700</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="wrapper service__wrapper">
+          <div class="service-choise">
+            <h2 class="title"> Дополнительные услуги</h2>
+            <div class="service-choise__layout">
+              <div class="service-choise__layout__elem"><span>Персональные тренировки</span><span>Дополнительный инструктаж</span></div>
+              <div class="service-choise__layout__elem"><span>Солярий</span><span>Полотенца</span></div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__data wrapper">
+          <div class="footer__location">
+            <span>ул. Доблести, 9</span>
+            <span>Время работы: 7:00 - 24:00</span>
+            <a href="">Просмотреть на крате</a>
+          </div>
+          <div class="footer__icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#fff" d="M14.783 1.304a3.897 3.897 0 013.913 3.913v9.566a3.897 3.897 0 01-3.913 3.913H5.217a3.897 3.897 0 01-3.913-3.913V5.217a3.897 3.897 0 013.913-3.913zM5.217 0C2.347 0 0 2.348 0 5.217v9.566C0 17.653 2.348 20 5.217 20h9.566C17.653 20 20 17.652 20 14.783V5.217C20 2.347 17.652 0 14.783 0z"/><path fill="#fff" d="M10 6.174c2.087 0 3.827 1.74 3.827 3.826 0 2.087-1.74 3.827-3.827 3.827-2.087 0-3.826-1.74-3.826-3.827 0-2.087 1.74-3.826 3.826-3.826zm0-1.304c-2.87 0-5.13 2.348-5.13 5.13 0 2.783 2.348 5.13 5.13 5.13 2.783 0 5.13-2.347 5.13-5.13 0-2.782-2.26-5.13-5.13-5.13zm5.3.96a1.13 1.13 0 100-2.26 1.13 1.13 0 000 2.26z"/></svg>
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.97998" y="0.489395" width="38" height="38" rx="19" fill="#433447"/>
+              <g clip-path="url(#clip0_27893_386)">
+              <path d="M25.1991 25.4534C24.7311 25.1414 24.264 24.6742 23.796 24.2842C23.4849 23.9731 22.8617 23.35 22.7049 23.35C22.4717 23.4271 22.3157 24.0511 22.3157 24.5962C22.3157 24.6742 22.3157 25.2194 21.9257 25.5314C21.6146 25.8434 21.0686 25.9214 20.9914 25.9214H19.5103C18.7311 25.9214 16.0817 25.7654 13.7443 23.5831C10.8609 20.9345 8.44543 15.9468 8.28857 15.7137C8.21229 15.3237 8.13429 14.7785 8.44543 14.4665C8.75743 14.1545 9.30257 14.0765 9.53657 14.0765H12.8091C12.8863 14.0765 13.2763 14.1545 13.5891 14.3105C13.9003 14.4665 14.0563 14.8565 14.0563 14.8565C14.0563 14.8565 14.5234 15.9468 15.2246 16.96C16.2377 18.5182 16.7049 18.9082 16.8617 18.9862C17.0169 18.6742 17.0949 17.6611 17.0169 16.726C17.0169 16.3368 16.9397 15.8688 16.7829 15.7137C16.6106 15.5623 16.389 15.4791 16.1597 15.4797L15.6146 15.0117C15.5366 14.4665 16.0817 14.0774 16.4717 13.9214C17.0169 13.6865 17.874 13.6094 18.8871 13.6094H19.4323C20.3674 13.6094 20.6794 13.6865 21.0694 13.7654C22.3937 14.0765 22.3157 15.0897 22.3157 16.3368V17.9722C22.3157 18.2842 22.3157 18.7514 22.3929 18.9854C22.5497 18.9074 23.0949 18.4394 24.03 17.0371C24.6531 16.1028 25.1211 15.0888 25.1991 14.8557C25.3543 14.5437 25.6663 14.1537 26.4454 14.1537H30.108C30.8871 14.1537 31.3543 14.3877 31.5103 14.8557C31.7443 15.3228 31.6663 16.18 29.64 18.4394C29.3289 18.7514 29.0949 19.0634 28.8609 19.2965C28.3937 19.8425 27.9266 20.3877 27.9266 20.5437C28.0037 20.6208 28.4717 21.0108 28.9389 21.4008C30.108 22.3351 30.8871 23.1922 31.2763 23.8162C31.6663 24.4394 31.5883 24.8294 31.5103 25.1405C31.1991 25.8425 30.264 25.9205 30.03 25.9205H26.8354C26.5234 25.9205 25.9003 25.8425 25.1983 25.4525L25.1991 25.4534ZM22.7049 22.1028C23.4069 22.1028 24.03 22.726 24.6531 23.35C25.0431 23.7391 25.4331 24.1291 25.8223 24.3622C26.3674 24.6742 26.8354 24.6742 26.9134 24.6742H29.952C30.108 24.6742 30.264 24.5971 30.342 24.5971C30.342 24.5971 30.342 24.5182 30.264 24.4402C29.952 23.8951 29.1729 23.116 28.1597 22.3368C27.2254 21.5568 26.7574 21.1677 26.6794 20.6225C26.6014 19.9994 27.0686 19.5314 27.9257 18.5182C28.1597 18.2851 28.3937 17.9731 28.7057 17.6611C29.952 16.2588 30.264 15.6357 30.342 15.3237H26.2114C26.0563 15.6357 25.5883 16.726 24.9651 17.6611C23.4849 19.8434 22.7829 20.1554 22.3157 20.1554C22.1597 20.1554 22.0037 20.1554 21.8477 20.0765C21.0686 19.6094 21.0686 18.6742 21.1466 17.8951V16.258C21.2246 14.9337 21.1466 14.9337 20.8354 14.8565C20.5234 14.7785 20.2894 14.7785 19.3543 14.7005H18.8091C18.342 14.7005 17.796 14.7005 17.3289 14.7777L17.562 15.0117C18.03 15.5577 18.03 16.5708 18.03 16.726C18.1071 17.9731 18.1071 19.6874 17.25 20.0774C17.0949 20.1545 16.9389 20.1545 16.7829 20.1545C16.0817 20.1545 15.3026 19.4534 14.1343 17.5831C13.5103 16.6488 12.9651 15.4797 12.9651 15.4017L12.8871 15.3237C12.8091 15.3237 12.7311 15.2465 12.6531 15.2465H9.45857C9.92571 16.1808 12.1071 20.3894 14.5234 22.648C16.6277 24.5962 19.0431 24.6742 19.5103 24.6742H20.9906C20.9906 24.6742 21.1466 24.5971 21.2246 24.5971V24.5182C21.2246 24.2842 21.2246 22.4928 22.4717 22.1808C22.5489 22.1037 22.6277 22.1037 22.7049 22.1037V22.1028Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_27893_386">
+              <rect width="24" height="12.8571" fill="white" transform="translate(7.97998 13.0608)"/>
+              </clipPath>
+              </defs>
+              </svg>              
+          </div>
+          <div class="footer__contacts">
+            <span>8 921 098-46-46</span>
+            <span>info@olympic-touch.ru</span>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <div class="foooter__elem wrapper">
+            <span>© 2024 OLYMPIC TOUCH</span>
+            <a href="#">dev by Kirill Fokin</a>
+          </div>
+         
+        </div>
+      </div>
+    </footer>
   </div>
   <script type="module" src="index.js"></script>
 </body>

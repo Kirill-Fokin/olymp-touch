@@ -1,33 +1,32 @@
 .button {
   @extend %flex-all-center;
   border: none;
-}
-
-.header__button {
-  top: -2rem;
-  right: 2rem;
-  position: absolute;
-  @include width-height(18.3rem, 4rem);
   border-radius: 1rem;
+  background-color: white;
+}
+
+.button-red {
   background-color: $main-color;
-  font-size: 1.6rem;
+  padding: 7px 24px 9px;
+  min-width: 180px;
   color: white;
-  border: none;
-  -webkit-box-shadow: 4px 5px 43px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 4px 5px 43px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 5px 43px 0px rgba(34, 60, 80, 0.2);
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: 0 10px 20px -10px rgba(10, 10, 10, .5), inset 0 0 0 0 transparent;
+  transition: background-color 200ms, box-shadow 200ms, -webkit-box-shadow 200ms;
+  &:hover {
+    background-color: red;
+  } 
 }
 
-.about__button {
-  width: 13rem;
+.button-black {
+  margin-bottom: -5rem;;
+  justify-self: flex-end;
+  max-width: 18rem;
+  display: inline-block;
+  padding: 11px 32px 13px;
+  min-width: 200px;
   background-color: $subMain-color;
-  border-radius: 2rem;
-  height: 4.5rem;
   color: white;
-  position: absolute;
-  
-   bottom: -3rem;
-
+  border-radius: 10px;
 }
-
-

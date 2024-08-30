@@ -1,0 +1,42 @@
+.club {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  max-width: 100%;
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-elem {
+    padding: 2rem;
+    font-size: 2rem;
+    flex-basis: 40%;
+  }
+
+  .club__subtext {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .card__layout {
+    flex-wrap: wrap;
+    display: flex;
+   }
+
+  img {
+    max-width: 100%;
+  }
+   &__title {
+    width: 100%;
+   }
+
+   &-layout {
+    display: flex;
+   }
+}
